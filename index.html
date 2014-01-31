@@ -50,11 +50,12 @@ p {
   transition: height .5s;
   border-radius: 0;
   }
-  input {
+input {
     font-family: 'Londrina Shadow', cursive;
     font-size:50px;
     color: white;
-    position: center;
+    position: relative;
+    left: 120px;
     background-color: #232323;
   }
 </style>
@@ -75,24 +76,25 @@ p {
 <script>
 function passWord() {
 var testV = 1;
-  var pass1 = prompt('What is your answer:',' ');
+var pass1 = prompt('Your answer:',' ');
 while (testV < 3) {
 if (!pass1)
 history.go(-1);
 if (pass1.toLowerCase() == "i<3u") {
-alert('Correct');
+alert('You are awesome');
 window.open('http://valentinesday.github.io/Welcome');
 break;
 }
 testV+=1;
 var pass1 =
-prompt('Please try again,'answer');
+prompt('That is not correct','think really hard');
 }
 if (pass1.toLowerCase()!="password" & testV ==3)
 history.go(-1);
 return " ";
 }
 </script>
+
 <center>
 <form>
 <input type="submit" value="Click to solve" onClick="passWord()">
