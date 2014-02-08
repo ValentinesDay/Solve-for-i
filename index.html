@@ -78,13 +78,13 @@ margin: 11px;
 <script>
 function passWord() {
 var testV = 1;
-var pass1 = prompt('What is your answer:','_self');
+var pass1 = prompt('What is your answer:',' ');
 while (testV < 3) {
 if (!pass1)
 history.go(-1);
 if (pass1.toLowerCase() == "i<3u") {
 alert('You are awesome!');
-window.open('http://valentinesday.github.io/Solved-for-i/');
+window.open('http://valentinesday.github.io/Solved-for-i/', '_self');
 break;
 }
 testV+=1;
