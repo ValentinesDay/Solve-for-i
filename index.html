@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <head>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
 <title>Mike & Eli</title>
@@ -11,7 +10,15 @@ body {
 max-width: 1900px;
   background: #232323;
 }
-
+ul {
+    color: black;
+}
+li {
+  font-family: 'Press Start 2P', cursive;
+  display: inline;
+  color: red;
+    padding:10px 15px 10px 15px;
+    }
 h1 {
   font-family: 'Press Start 2P', cursive;
 
@@ -19,6 +26,12 @@ h1 {
   color: white;
   margin: 60px 0 0 0;
 }
+h1 {  
+  font-family: 'Press Start 2P', cursive;
+  font-size: 50px;
+  color: white;
+      margin: 60px 0 0 0;
+  }
 h2 {
   font-family: 'Press Start 2P', cursive;
   left: 355px;
@@ -26,15 +39,6 @@ h2 {
   color: white;
   margin: 60px 0 0 0;
   }
-  ul {
-    color: black;
-}
-li {
-  font-family: 'Press Start 2P', cursive;
-  display: inline;
-  color: red;
-      padding:10px 15px 10px 15px;
-}
 p {
   font-family: 'Londrina Shadow', cursive;
   font-size: 100px;  
@@ -48,42 +52,43 @@ p {
   }
 
 input {
-    font-family: 'Londrina Shadow', cursive;
-    color: white;
-    font-size: 95px; 
-    margin: 11px;
-    margin-top: -50px;
-    background-color: #232323;
+  font-family: 'Press Start 2P', cursive;
+  color: red;
+  font-size: 20px; 
+margin: 11px;
+    margin-top: 50px;
   }
 </style>
+</style>
 </head>
+
 <body>
-  <center>
-    <div align="center">
-    <h1>Mike & Eli</h1>
+<center>
+<h1>Mike & Eli</h1>
 <h2>a geeky love story</h2>
     <ul>
       <li><a href="#"><a href="http://valentinesday.github.io/Our_Story/">Our Story</a></li>
       <li><a href="#"><a href="http://valentinesday.github.io/Recipe-for-Love/">Recipe for Love</a></li>
       <li><a href="#"><a href="http://valentinesday.github.io/Solve-for-i">Solve for i</a></li>
       <li><a href="#"><a href="http://valentinesday.github.io/00111111/">00111111</a></li>
+ 
 <body link="black" vlink="red" alink="red"> 
-<p>9x - 7i > 3 (3x - 7u)</p>
+<p>9x - 7i < 3 (3x -7u)</p>
 <script>
 function passWord() {
 var testV = 1;
-var pass1 = prompt('What is the answer?',' ');
+var pass1 = prompt('Perhaps a Password to continue:',' ');
 while (testV < 3) {
 if (!pass1)
 history.go(-1);
-if (pass1.toLowerCase() == "i<3u") {
-alert('Amazing!');
-open.windwo = 'http://valentinesday.github.io/Solved-for-i/');
+if (pass1.toLowerCase() == "mike&i") {
+alert('You are awesome');
+window.open('http://valentinesday.github.io/Welcome');
 break;
 }
 testV+=1;
 var pass1 =
-prompt('That is not the answer...','...think really hard...');
+prompt('Mike Is Awesome is not the password...','...check the box...');
 }
 if (pass1.toLowerCase()!="password" & testV ==3)
 history.go(-1);
@@ -91,8 +96,8 @@ return " ";
 }
 </script>
 <form>
-<input type="submit" value="Click to Solve" onClick="passWord()">
+<input type="submit" value="Mike is Awesome" onClick="passWord()">
 </form>
 </center>
 </body>
-</html>
+ 
