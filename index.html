@@ -52,8 +52,9 @@ p {
   }
 
 input {
-  font-family: 'Press Start 2P', cursive;
-  color: red;
+  font-family: 'Londrina Shadow', cursive;
+  color: white;
+      background: #232323;
   font-size: 20px; 
 margin: 11px;
     margin-top: 50px;
@@ -77,18 +78,18 @@ margin: 11px;
 <script>
 function passWord() {
 var testV = 1;
-var pass1 = prompt('Perhaps a Password to continue:',' ');
+var pass1 = prompt('What is your answer:',' ');
 while (testV < 3) {
 if (!pass1)
 history.go(-1);
-if (pass1.toLowerCase() == "mike&i") {
-alert('You are awesome');
-window.open('http://valentinesday.github.io/Welcome');
+if (pass1.toLowerCase() == "i<3u") {
+alert('You are awesome!');
+window.open('http://valentinesday.github.io/Solved-for-i/');
 break;
 }
 testV+=1;
 var pass1 =
-prompt('Mike Is Awesome is not the password...','...check the box...');
+prompt('u <3 i is not the answer...','...think really hard...');
 }
 if (pass1.toLowerCase()!="password" & testV ==3)
 history.go(-1);
@@ -96,7 +97,7 @@ return " ";
 }
 </script>
 <form>
-<input type="submit" value="Mike is Awesome" onClick="passWord()">
+<input type="submit" value="Click to Solve" onClick="passWord()">
 </form>
 </center>
 </body>
