@@ -95,6 +95,10 @@ if (pass1.toLowerCase()!="password" & testV ==3)
 history.go(-1);
 return " ";
 }
+function o(){
+  window.open('page.php');
+}
+$('button').addEvent('click', o);
 </script>
 <form>
 <input type="submit" value="Click to Solve" onClick="passWord()">
